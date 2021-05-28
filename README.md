@@ -13,3 +13,8 @@ MIT - Code mag gebruikt worden om te verbeteren.
 # Voorbereiding
 
 In de map `Voorbereiding` kunt u een paar dingen vinden, zo staan er mapjes die momenteel een klein, vaag beeld opgeven: De naam maakt in ieder geval niet uit, voor meer informatie over de inhoud van het mapje staat er een screenshot bijgeleverd ín het mapje.
+
+Ook hier vindt u de directe website code.
+
+# Live Versie
+[Let op: Openen in nieuw tablad!](https://www.bobvanberckel.com/watchcartel/)
