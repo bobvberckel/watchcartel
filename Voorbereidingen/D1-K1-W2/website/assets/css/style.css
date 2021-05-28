@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "Rockwell";
+  src: url("../fonts/ROCK.TTF") format("TTF");
+}
+
+/* Page settings */
+body {
+  font-family: "Rockwell", sans-serif !important;
+  color: #000 !important;
+}
+
+a.btn.btn-primary {
+  background-color: #0e115a;
+  border-color: #0e115a;
+  text-decoration: underline;
+}
+
+.content-space {
+  display: block;
+  margin-top: 50px;
+}
+
+/* Navigation Bar */
+nav.navbar-default {
+  box-shadow: 0px 0px 8px #000;
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  margin: 0;
+  padding: 15px 0;
+  border-radius: 0;
+  border: none;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+a.navbar-brand img {
+  max-width: 100px;
+  height: 70px;
+  margin-top: -20px;
+  padding: 0;
+}
+
+nav.navbar-default .navbar-nav>li>a {
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  margin: 0 15px;
+  transition: background 1s, color 1s;
+}
+
+nav.navbar-default .navbar-nav>.active>a,
+nav.navbar-default .navbar-nav>.active>a:focus,
+nav.navbar-default .navbar-nav>.active>a:hover,
+nav.navbar-default .navbar-nav>li>a:hover,
+nav.navbar-default .navbar-nav>li>a:focus {
+  font-weight: 500;
+  text-decoration: underline;
+  background: #0e115a;
+  color: #fff;
+  transition: background 1s, color 1s;
+}
+
+@media (max-width: 768px) {
+
+  nav.navbar-default .navbar-toggle,
+  nav.navbar-default .navbar-toggle:focus,
+  nav.navbar-default .navbar-toggle:hover {
+    border-color: #000;
+    background-color: #fff;
+  }
+
+  nav.navbar-default .navbar-toggle .icon-bar {
+    background-color: #000;
+  }
+}
+
+@media (min-width: 1200px) {
+  ul.nav.navbar-nav {
+    padding-left: 400px;
+  }
+}
+
+/* Header */
+.header {
+  background: url("../images/img-header.jpg");
+  height: 700px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.header .content-text {
+  margin-top: 250px;
+  color: #c43c29;
+  text-shadow: -2px 2px #000;
+}
+
+.header .content-text h2 {
+  font-size: 80px;
+}
+
+.header .content-text p {
+  font-size: 30px;
+}
+
+/* Titlepiece */
+.titlepiece {
+  background: url("../images/img-titlepiece.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.titlepiece .content-text {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 25px;
+  border-radius: 24px;
+}
+
+.titlepiece .content-text h1 {
+  font-size: 60px;
+}
+
+.titlepiece .content-text h3 {
+  font-style: italic;
+}
+
+@media (min-width: 992px) {
+  .titlepiece .content-text {
+    margin: 50px auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .titlepiece .content-text {
+    width: 750px;
+    margin: 115px auto;
+  }
+}
+
+/* Products */
+.products {
+  background-color: #050808;
+}
+
+.products .content-text {
+  color: #fff;
+}
+
+.productcontainer {
+  border: 3px solid #fff;
+}
+
+.products .productcontainer {
+  background: #fff;
+  color: #000;
+  height: 750px;
+  position: relative;
+}
+
+.products .productcontainer img {
+  max-width: 250px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.products .productcontainer .productcontainer_text {
+  margin: 15px 0 15px 15px;
+}
+
+.products .productcontainer .productcontainer_text a.btn {
+  position: absolute;
+  bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .products .content-text h1 {
+    font-size: 20px;
+  }
+
+  .products .productcontainer {
+    margin-top: 25px;
+  }
+}
+
+/* Contact */
+.contact .content-text p {
+  display: inline-block;
+  padding: 5px;
+}
+
+/* Account */
+.account img {
+  border: 1px solid #000;
+}
+
+/* Footer */
+.footer {
+  margin: 50px 0;
+}
+
+.footer .icon i {
+  font-size: 40px;
+  margin: 0 10px;
+  color: #c43c29;
+}
+
+/* Row - Middle Tool */
+@media (min-width: 768px) {
+  .row-eq-height {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: wrap row;
+    flex-flow: wrap row;
+  }
+
+  .row-eq-height:after,
+  .row-eq-height:before {
+    display: none;
+  }
+
+  .row-eq-height.middle {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .navbar-header {
+    display: none;
+  }
+}
+
+/* ! Information */
+/* 
+* Bootstrap uses certain methods of retrieving the models of responsiveness. Mobile, Tablet (standing), Tablet (normal) and Desktop.
+
+? For Desktop use:
+* @media(min-width: 1200px) {}
+
+? For Tablet (normal) use:
+* @media(min-width: 992px) {}
+
+? For Tablet (standing) use:
+* @media(min-width: 768px) {}
+
+? For Mobile use:
+* @media(max-width: 768px) {}
+*/
